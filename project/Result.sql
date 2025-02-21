@@ -1,0 +1,23 @@
+CREATE TABLE `Sales_dataset` (
+	`Row ID` DECIMAL(38, 0) NOT NULL, 
+	`Order ID` VARCHAR(14) NOT NULL, 
+	`Order Date` VARCHAR(10) NOT NULL, 
+	`Ship Date` VARCHAR(10) NOT NULL, 
+	`Ship Mode` VARCHAR(14) NOT NULL, 
+	`Customer ID` VARCHAR(8) NOT NULL, 
+	`Customer Name` VARCHAR(22) NOT NULL, 
+	`Segment` VARCHAR(11) NOT NULL, 
+	`Country/Region` VARCHAR(13) NOT NULL, 
+	`City` VARCHAR(17) NOT NULL, 
+	`State/Province` VARCHAR(25) NOT NULL, 
+	`Postal Code` VARCHAR(5) NOT NULL, 
+	`Region` VARCHAR(7) NOT NULL, 
+	`Product ID` VARCHAR(15) NOT NULL, 
+	`Category` VARCHAR(15) NOT NULL, 
+	`Sub-Category` VARCHAR(11) NOT NULL, 
+	`Product Name` VARCHAR(127) NOT NULL, 
+	`Sales` DECIMAL(38, 4) NOT NULL, 
+	`Quantity` DECIMAL(38, 0) NOT NULL, 
+	`Discount` DECIMAL(38, 2) NOT NULL, 
+	`Profit` DECIMAL(38, 4) NOT NULL
+);
