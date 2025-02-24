@@ -94,3 +94,49 @@ LIMIT 3;
 SELECT name
 FROM customer
 WHERE cust_ID NOT IN ( SELECT DISTINCT cust_ID FROM orders);
+
+SELECT * 
+FROM customer
+LEFT JOIN orders
+ON customer.cust_ID=orders.cust_ID;
+
+SELECT * 
+FROM customer
+RIGHT JOIN orders
+ON customer.cust_ID=orders.cust_ID;
+
+SELECT * 
+FROM customer
+LEFT JOIN orders
+ON customer.cust_ID=orders.cust_ID;
+UNION
+SELECT * 
+FROM customer
+RIGHT JOIN orders
+ON customer.cust_ID=orders.cust_ID;
+
+SELECT * FROM emp;
+
+SELECT Name,Salary
+FROM emp
+WHERE Department='IT';
+
+SELECT * 
+FROM emp
+WHERE Salary > 50000;
+
+SELECT *
+FROM emp
+ORDER BY Salary DESC;
+
+SELECT Salary,COUNT(Salary)
+FROM emp
+GROUP BY Salary;
+
+SELECT Department,COUNT(Department)
+FROM emp
+GROUP BY Department;
+
+SELECT Department,COUNT(*)
+FROM emp
+GROUP BY Department;
